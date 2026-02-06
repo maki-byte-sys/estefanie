@@ -4,6 +4,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Food Hunt</title>
   <link rel="stylesheet" href="style.css">
+    <style>
+body{
+  background:#0e0e11;
+  color:#eaeaea;
+}.contact-hero{ max-width:1100px; margin:50px auto 30px; text-align:center; } .contact-hero h1{ font-size:44px; color:#f9b233; margin-bottom:18px; letter-spacing:1px; } .contact-hero .subtitle{ background:linear-gradient(135deg,#1c1c22,#15151a); color:#ccc; padding:20px 28px; border-radius:16px; font-style:italic; max-width:900px; margin:0 auto; box-shadow:0 10px 30px rgba(0,0,0,0.6); }
+
+.info-cards{ max-width:1100px; margin:50px auto; display:grid; grid-template-columns:repeat(2,1fr); gap:30px; } .info-card{ background:linear-gradient(145deg,#141418,#1b1b22); border-radius:20px; padding:35px; box-shadow:0 20px 45px rgba(0,0,0,0.7); border:1px solid rgba(255,255,255,0.05); position:relative; overflow:hidden; } .info-card::before{ content:""; position:absolute; top:0;left:0; width:100%;height:100%; background:linear-gradient(120deg,transparent,rgba(249,178,51,0.15),transparent); opacity:0; transition:0.4s; } .info-card:hover::before{opacity:1;} .info-card h3{ margin-bottom:15px; color:#f9b233; font-size:20px; } .info-card p{ font-size:14px; color:#ddd; margin-bottom:6px; } .info-card small{ color:#aaa; }
+
+.map-section{ max-width:1100px; margin:60px auto; } .map-section h2{ text-align:center; margin-bottom:25px; color:#f9b233; letter-spacing:1px; } .map-container{ background:#141418; padding:22px; border-radius:22px; box-shadow:0 20px 45px rgba(0,0,0,0.7); border:1px solid rgba(255,255,255,0.05); }
+
+.order-card{ background:linear-gradient(145deg,#141418,#1b1b22); }
+
+.order-left h1{ color:#fff; }
+
+.contact-form label{ display:block; margin-top:15px; font-size:14px; color:#ccc; } .contact-form input, .contact-form textarea{ width:100%; padding:13px 16px; margin-top:6px; border-radius:12px; border:1px solid #2a2a33; font-size:14px; background:#0f0f14; color:#fff; } .contact-form input::placeholder, .contact-form textarea::placeholder{ color:#777; } .contact-form input:focus, .contact-form textarea:focus{ outline:none; border-color:#f9b233; box-shadow:0 0 0 2px rgba(249,178,51,0.2); }
+
+.primary{ background:linear-gradient(135deg,#f9b233,#ffcc66); color:#000; font-weight:600; } .primary:hover{ background:linear-gradient(135deg,#ffcc66,#f9b233); }
+
+.footer{ background:#0a0a0d; color:#aaa; }
+
+.navbar{ background:#0a0a0d; } nav a{color:#ddd;} .logo{color:#f9b233;}
+
+@media(max-width:768px){ .info-cards{grid-template-columns:1fr;} .order-card{flex-direction:column;} .order-right img{width:60%;margin:30px 0;} } </style>
+
 </head>
 <body><header class="navbar">
   <div class="logo">Food Hunt</div>
@@ -13,21 +37,41 @@
     <a href="contact.html">Contact</a>
   </nav>
   <div class="cart">🛒</div>
-</header><section class="order-card">
+</header><section class="contact-hero">
+  <h1>Contact Us</h1>
+  <p class="subtitle">“Have a question, suggestion, or feedback? We’d love to hear from you!”</p>
+</section><section class="info-cards">
+  <div class="info-card">
+    <h3>📧 Email</h3>
+    <p><strong>Email Address</strong></p>
+    <p>estefanie@gmail.com</p>
+    <small>We’ll get back to you as soon as possible!</small>
+  </div>  <div class="info-card">
+    <h3>📍 Location</h3>
+    <p><strong>Institution</strong></p>
+    <p>Binalatongan Community College</p>
+    <small>Visit us for more information</small>
+  </div>
+</section><section class="map-section">
+  <h2>📌 Find Us</h2>
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps?q=Binalatongan%20Community%20College&output=embed" 
+      width="100%" 
+      height="350" 
+      style="border:0; border-radius:12px;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</section><section class="order-card">
   <div class="order-left">
-    <h1>Contact<br><span>Food Hunt</span></h1>
-    <p class="contact-text">
-      Have questions or suggestions? Reach out to us and we’ll get back to you as soon as possible!
-    </p><form class="contact-form" action="#" method="post">
+    <h1>Message<br><span>Food Hunt</span></h1><form class="contact-form" action="#" method="post">
   <label for="name">Name</label>
   <input type="text" id="name" name="name" placeholder="Your Name" required>
 
   <label for="email">Email</label>
   <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-  <!-- NEW LOCATION SLOT -->
-  <label for="location">School Location</label>
-  <input type="text" id="location" name="location" value="Binalatongan Community College" readonly>
 
   <label for="message">Message</label>
   <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
@@ -41,48 +85,6 @@
 
   </div>  <div class="order-right">
     <img src="https://images.unsplash.com/photo-1604908177522-432f9b1f8d6c" alt="Contact Food Hunt">
-  </div>
-</section><!-- CONTACT INFO CARDS --><section class="contact-info-section">
-  <div class="contact-cards">
-    <div class="info-card">
-      <h3>📧 Email</h3>
-      <p><strong>Email Address</strong></p>
-      <p>pidlaoanreynaldo228@gmail.com</p>
-      <small>We'll get back to you as soon as possible!</small>
-    </div><div class="info-card">
-  <h3>📍 Location</h3>
-  <p><strong>Institution</strong></p>
-  <p>Binalatongan Community College</p>
-  <small>Visit us for more information</small>
-</div>
-
-  </div>
-</section><!-- MAP SECTION --><section class="map-section">
-  <h2>📍 Find Us</h2>
-  <div class="map-container">
-    <iframe 
-      src="https://www.google.com/maps?q=Binalatongan+Community+College+San+Carlos+City+Pangasinan&output=embed"
-      width="100%" 
-      height="350" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
-  </div>
-</section><section class="cards-section">
-  <div class="cards-container two-by-two">
-    <a href="pancake.html" class="card">
-      <img src="pancake1.jpg" alt="Pancake">
-    </a>
-    <a href="lumpia.html" class="card">
-      <img src="lumpia1.jpg" alt="Lumpia">
-    </a>
-    <a href="chopsuey.html" class="card">
-      <img src="chopsuey1.jpg" alt="Chop Suey">
-    </a>
-    <a href="caldereta.html" class="card">
-      <img src="caldereta1.jpg" alt="Caldereta">
-    </a>
   </div>
 </section><footer class="footer">
   <p>Estefanie U. Canabano Webpage</p>

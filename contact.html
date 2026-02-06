@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Food Hunt</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header class="navbar">
+<body><header class="navbar">
   <div class="logo">Food Hunt</div>
   <nav>
     <a href="index.html">Home</a>
@@ -16,39 +13,63 @@
     <a href="contact.html">Contact</a>
   </nav>
   <div class="cart">🛒</div>
-</header>
-
-<section class="order-card">
+</header><section class="order-card">
   <div class="order-left">
     <h1>Contact<br><span>Food Hunt</span></h1>
     <p class="contact-text">
       Have questions or suggestions? Reach out to us and we’ll get back to you as soon as possible!
-    </p>
+    </p><form class="contact-form" action="#" method="post">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-    <form class="contact-form" action="#" method="post">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Your Name" required>
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Your Email" required>
+  <!-- NEW LOCATION SLOT -->
+  <label for="location">School Location</label>
+  <input type="text" id="location" name="location" value="Binalatongan Community College" readonly>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
 
-      <button type="submit" class="primary">Send Message</button>
-    </form>
+  <button type="submit" class="primary">Send Message</button>
+</form>
 
-    <a href="index.html">
-      <button class="primary">Back to Main Page</button>
-    </a>
-  </div>
+<a href="index.html">
+  <button class="primary">Back to Main Page</button>
+</a>
 
-  <div class="order-right">
+  </div>  <div class="order-right">
     <img src="https://images.unsplash.com/photo-1604908177522-432f9b1f8d6c" alt="Contact Food Hunt">
   </div>
-</section>
+</section><!-- CONTACT INFO CARDS --><section class="contact-info-section">
+  <div class="contact-cards">
+    <div class="info-card">
+      <h3>📧 Email</h3>
+      <p><strong>Email Address</strong></p>
+      <p>pidlaoanreynaldo228@gmail.com</p>
+      <small>We'll get back to you as soon as possible!</small>
+    </div><div class="info-card">
+  <h3>📍 Location</h3>
+  <p><strong>Institution</strong></p>
+  <p>Binalatongan Community College</p>
+  <small>Visit us for more information</small>
+</div>
 
-<section class="cards-section">
+  </div>
+</section><!-- MAP SECTION --><section class="map-section">
+  <h2>📍 Find Us</h2>
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps?q=Binalatongan+Community+College+San+Carlos+City+Pangasinan&output=embed"
+      width="100%" 
+      height="350" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</section><section class="cards-section">
   <div class="cards-container two-by-two">
     <a href="pancake.html" class="card">
       <img src="pancake1.jpg" alt="Pancake">
@@ -63,11 +84,7 @@
       <img src="caldereta1.jpg" alt="Caldereta">
     </a>
   </div>
-</section>
-
-<footer class="footer">
+</section><footer class="footer">
   <p>Estefanie U. Canabano Webpage</p>
-</footer>
-
-</body>
+</footer></body>
 </html>

@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+}
+
+.cart {
+  font-size: 20px;
+}
+
+.order-card {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 30px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.15);
+}
+
+.order-left {
+  flex: 1;
+  padding: 60px;
+}
+
+.order-left h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.order-left span {
+  color: #f9b233;
+}
+
+.price-box {
+  margin-bottom: 30px;
+}
+
+.price-box p {
+  font-size: 14px;
+  color: #777;
+}
+
+.price-box h2 {
+  font-size: 32px;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.primary {
+  padding: 14px 30px;
+  background: #f9b233;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary:hover {
+  background-color: #d4a020;
+}
+
+.secondary {
+  padding: 14px 30px;
+  background: #eee;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.secondary:hover {
+  background-color: #ccc;
+}
+
+.tags span {
+  display: inline-block;
+  background: #f5f5f5;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.order-right {
+  flex: 1;
+  background: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-right img {
+  width: 75%;
+  border-radius: 50%;
+}
+
+.cards-section {
+  padding: 60px;
+}
+
+.cards-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+}
+
+.two-by-two {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 700px;
+  margin: auto;
+}
+
+.card {
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.footer {
+  background: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+}
+
+.recipe-list,
+.recipe-steps {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.recipe-list li,
+.recipe-steps li {
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Special styling for the Back to Main Page button in lumpia.html */
+.order-left a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.order-left a button.primary {
+  font-size: 16px;
+  padding: 14px 40px;
+  border-radius: 25px;
+  border: none;
+  background-color: #f9b233;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-left a button.primary:hover {
+  background-color: #d4a020;
+}
+
+.recipe-source {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #555;
+}
+
+.recipe-source a {
+  color: #f9b233;
+  text-decoration: none;
+}
+
+.recipe-source a:hover {
+  text-decoration: underline;
+}
